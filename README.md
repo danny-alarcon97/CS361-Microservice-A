@@ -75,6 +75,30 @@ The Flask route `/random-background` makes a GET request to the Node.js microser
 
 The fetched background image URL is passed to the `random_background.html` template, which uses it as the background image.
 
+## Requesting Data from the Microservice
+
+To request a random background image, you can use `curl` or Postman to test, then make a GET request to the following endpoint:
+
+```bash
+GET http://localhost:7000/api/backgrounds/random
+```
+
+## Receiving Data from the Microservice
+
+The microservice will respond with a JSON object containing the URL of a random background image.
+
+Example:
+
+```json
+{
+  "background": "/images/background3.jpg"
+}
+```
+
 ## UML Sequence Diagram
 
 ![alt text](image.png)
+
+```
+
+```
