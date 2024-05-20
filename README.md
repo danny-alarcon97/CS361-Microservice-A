@@ -54,3 +54,5 @@ The Flask route `/random-background` makes a GET request to the Node.js microser
 ## Display the Background Image
 
 The fetched background image URL is passed to the `random_background.html` template, which uses it as the background image.
+
+![alt text](image.png)
